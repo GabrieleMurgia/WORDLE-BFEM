@@ -1,0 +1,49 @@
+
+Rules (ITA)
+
+Obiettivo
+Indovinare una parola segreta di 5 lettere in un massimo di 6 tentativi.
+
+Come si gioca
+
+Ogni volta che inserisci una parola valida (in inglese nella versione originale, ma esistono anche versioni in italiano), il gioco ti dà indizi sui singoli caratteri.
+
+Colori degli indizi
+
+Verde: la lettera è nella parola segreta e nella posizione corretta.
+
+Giallo: la lettera è nella parola segreta, ma in una posizione diversa.
+
+Grigio/nero: la lettera non è presente nella parola segreta.
+
+Strategia
+
+Usa la prima parola per testare molte lettere comuni.
+
+Elimina progressivamente lettere impossibili e piazza quelle confermate nei punti giusti.
+
+Vittoria e sconfitta
+
+Se indovini entro 6 tentativi, vinci.
+
+Se finisci i tentativi, la parola viene rivelata.
+
+
+tasks (ENG)
+
+There is a secret five letter word chosen
+
+Players have six guesses to figure out the secret word. After six guesses, they lose
+
+If the player guesses a letter that is in the right place, it is shown as green
+
+If the player guesses a letter that is in the word but not in the right place, it is shown as yellow
+
+It does account for however many of the letter exist in the word. For example, if the player guesses "SPOOL" and the word is "OVERT", 
+one "O" is shown as yellow and the second one is not.
+
+If the player guesses the right word, the player wins and the game is over.
+
+API:
+1) GET https://words.dev-apis.com/word-of-the-day https://words.dev-apis.com/word-of-the-day?random=1(RANDOM) https://words.dev-apis.com/word-of-the-day?puzzle=122(SELECT A SPECIFIC WORD)
+2) POST https://words.dev-apis.com/validate-word
